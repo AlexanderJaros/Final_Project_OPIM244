@@ -1,0 +1,5 @@
+# requirements.txt
+
+requests
+sendgrid==6.0.5
+Flask

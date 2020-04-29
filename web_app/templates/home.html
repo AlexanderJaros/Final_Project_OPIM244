@@ -1,0 +1,36 @@
+{% extends "bootstrap_layout.html" %}
+{% set active_page = "home" %}
+
+{% block content %}
+
+    <h2>Home</h2>
+
+    <p>Welcome, parents, to our app! We hope to help you learn more about your baby.</p>
+
+
+    
+    <h1>Please enter their name and sex...</h1>
+
+    <p>...and then click "Submit"!</p>
+
+    <form action="/users/create" method="POST">
+
+        <label>First Name:</label>
+        <input type="text" name="full_name" placeholder="Example User" value="Example User">
+        <br>
+
+        <label>Sex:</label>
+        <select name="country">
+            <option value="M" selected="true">Male</option>
+            <option value="F">Female</option>
+        </select>
+        <br>
+
+        <label>Email Address:</label>
+        <input type="text" name="email_address" placeholder="me@example.com" value="me@example.com">
+        <br>
+
+        <button>Submit</button>
+    </form>
+
+{% endblock %}
