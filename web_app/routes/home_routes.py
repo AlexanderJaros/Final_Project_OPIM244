@@ -10,7 +10,7 @@ def index():
     return render_template("home.html")
 
 @home_routes.route("/nameresult")
-def about():
+def nameresult():
     print("VISITED THE NAME RESULT PAGE")
     #return "About Me (TODO)"
     return render_template("nameresult.html")

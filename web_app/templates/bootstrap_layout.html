@@ -36,19 +36,12 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="nav navbar-nav ml-auto">
-          {% for href, id, link_text in nav_links %}
-            {% if id == active_page %}
-              {% set is_active = "active" -%}
-            {% else %}
-              {% set is_active = "" -%}
-            {% endif %}
-            <li class="nav-item">
-              <a class="nav-link {{ is_active }}" href="{{href}}">{{link_text}}</a>
-            </li>
-          {% endfor %}
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Name Result</a>
+          <a class="nav-item nav-link" href="#">About</a>
         </div>
-      </ul>
+      <div>
     </nav>
 
 
