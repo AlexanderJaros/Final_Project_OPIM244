@@ -8,9 +8,21 @@
 #print(soup)
 
 import requests
+import cgi
+
+
+form = cgi.FieldStorage()
+
+name =  form.getvalue('name')
+sex = form.getvalue('sex')
+
+
+#name = input("Please enter your baby's first name: ")
+#sex = input("Please enter your baby's sex as either 'M' or 'F': ")
+
 
 request_url = "https://www.ssa.gov/cgi-bin/babyname.cgi"
-params = {"name": "Alex", "sex": "M"}
+params = {"name": name, "sex": sex}
 response = requests.post(request_url, params)
 print(response.status_code)
 print(response.text)
