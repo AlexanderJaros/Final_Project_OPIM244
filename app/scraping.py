@@ -8,13 +8,13 @@
 #print(soup)
 
 import requests
-import cgi
+#import cgi
 
 
-form = cgi.FieldStorage()
-
-name =  form.getvalue('name')
-sex = form.getvalue('sex')
+#form = cgi.FieldStorage()
+#
+#name =  form.getvalue('name')
+#sex = form.getvalue('sex')
 
 
 #name = input("Please enter your baby's first name: ")
